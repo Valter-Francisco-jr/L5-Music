@@ -1,0 +1,64 @@
+{
+  "musics": [
+    {
+      "id": 1,
+      "musica": "Bloqueado",
+      "artista": "Gustavo Lima"
+    },
+    {
+      "id": 2,
+      "musica": "Passinho Debochado",
+      "artista": "Dan Ventura"
+    },
+    {
+      "id": 10,
+      "musica": "Vai Lá em Casa Hoje",
+      "artista": "Marília Mendonça"
+    },
+    {
+      "id": 6,
+      "musica": "Esquema Preferido",
+      "artista": "Os Barões da Pisadinha"
+    },
+    {
+      "id": 5,
+      "musica": "Meia Noite",
+      "artista": "Zé Vaqueiro"
+    },
+    {
+      "id": 4,
+      "musica": "Vontade de Morder",
+      "artista": "Simone & Simaria e Zé Felipe"
+    },
+    {
+      "id": 7,
+      "musica": "Batom De Cereja",
+      "artista": "Israel & Rodolffo"
+    },
+    {
+      "id": 8,
+      "musica": "Morena",
+      "artista": "Luan Santana"
+    },
+    {
+      "id": 9,
+      "musica": "Malvada",
+      "artista": "Zé Felipe"
+    },
+    {
+      "id": 10,
+      "musica": "Toma Toma Vapo Vapo",
+      "artista": "Zé Felipe & Mc Danny"
+    },
+    {
+      "id": 11,
+      "musica": "Rolê",
+      "artista": "Marcynho Sensação "
+    },
+    {
+      "id": 12,
+      "musica": "Meu Pedaço de Pecado",
+      "artista": "João Gomes"
+    }
+  ]
+}

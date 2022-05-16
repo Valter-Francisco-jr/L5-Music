@@ -1,0 +1,18 @@
+
+<br>
+<div class="title_music">
+    <h2>Histórico</h2>
+</div>
+<br>
+
+
+<ul class="list-group list-group-numbered">
+  <p *ngIf="pesquisa.length==0"><small>Histórico Vazio!</small></p>
+  <li clas="list-group-item" *ngFor="let p of pesquisa">{{p.title}}
+    <div class="button"><button class="btn btn-outline-danger" (click)="remove(p)">Excluir</button></div>
+  </li>
+</ul>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

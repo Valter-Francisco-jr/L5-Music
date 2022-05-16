@@ -1,0 +1,84 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+nav .container-fluid{
+    background-color: #000;
+    margin-top: -8px;
+}
+
+nav .container-fluid img{
+    width: 180px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+nav .collapse .navbar-nav li .nav-link{
+    background: linear-gradient(to right, #e285ee 0%, #870fb8  51%, #64baf2  100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 15px;
+    background-size: 200% auto;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+
+nav .collapse .navbar-nav li .nav-link:hover {
+    background-position: right center;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+
+
+}
+
+.navbar-nav li a{
+    color: #fff;
+    margin-right: 20px;
+}
+
+.navbar-nav li a:hover{
+    color: #870fb8;
+}
+
+.btn {
+   background: linear-gradient(to right, #e285ee 0%, #870fb8  51%, #64baf2  100%);
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   border: none;
+   color: white;
+   display: block;
+ }
+
+ .btn:hover {
+   background-position: right center;
+   color: #fff;
+   border: none;
+   text-decoration: none;
+}
+
+hr{
+    width: 100%;
+    margin-top: 100px;
+    border: 3px solid;
+    color: #870fb8;
+    position: absolute;
+}
+
+@media (max-width: 767px){
+    nav .collapse .navbar-nav li .nav-link{
+      background: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+      font-size: 15px;
+      background-size: 200% auto;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      display: block;
+      cursor: pointer;
+  }
+}

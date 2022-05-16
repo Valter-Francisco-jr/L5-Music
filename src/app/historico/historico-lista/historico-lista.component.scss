@@ -1,0 +1,58 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title_music h2{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #870fb8;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.title_music h2::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: #870fb8;
+  width: 180px;
+  height: 3px;
+  transform: translateX(-50%);
+}
+
+ul{
+  margin: 30px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+ul p{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 700;
+}
+
+ul li{
+  font-size: 20px;
+  padding: 15px;
+  margin-left: 20px;
+
+}
+
+ul li .button{
+  margin-left: 80%;
+  margin-top: -50px;
+  padding: 14px;
+}
+
+

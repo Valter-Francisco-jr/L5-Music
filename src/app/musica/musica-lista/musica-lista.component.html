@@ -1,0 +1,17 @@
+<div class="list-music">
+  <div class="max-width">
+    <div class="title_music"><h2>Música</h2></div>
+    <div class="project-content">
+      <div class="column_music" *ngFor="let m of musics">
+        <img [src]="capaMusics" alt="">
+        <h3 class="text">{{m.musica}}</h3>
+        <p>{{m.artista}}.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
+
+      </div>
+    </div>
+  </div>

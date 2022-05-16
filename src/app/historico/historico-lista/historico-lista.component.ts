@@ -1,25 +1,21 @@
-import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import { Pesquisa } from 'src/app/app.module';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  title = 'L5-Music';
-  myimage:string = "assets/images/Logo-L5-Music.png";
-  imagemusic:string = "assets/images/dynamic-radial-color-sound-equalizer-design-music-album-cover-template-abstract-circular-digital-data-form-vector-160916775.jpg";
-  ionicon:string = "assts/images/list-music.png"
-  playermusic:string = "assets/images/play-fill.svg"
 
+@Component({
+  selector: 'app-historico-lista',
+  templateUrl: './historico-lista.component.html',
+  styleUrls: ['./historico-lista.component.scss']
+})
+export class HistoricoListaComponent implements OnInit {
+
+  /* Aqui temos um exemplo de como vai ficar
+  o historico da pesquisa na página */
 
   public pesquisa: Pesquisa[] = [];
   public form: FormGroup;
 
-  /* input de pesquisa salvando no
-  LocalStorage mas sem ir para a pagina de histórico  */
 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
@@ -29,6 +25,7 @@ export class AppComponent {
         Validators.required,
       ])]
     });
+    this.pesquisa.push(new Pesquisa('Exemplo'));
 
   }
 
@@ -44,11 +41,20 @@ export class AppComponent {
     this.form.reset();
   }
 
+  remove(pesquisa: Pesquisa) {
+    const index = this.pesquisa.indexOf(pesquisa);
+    if(index !== -1) {
+      this.pesquisa.splice(index, 1);
+    }
+  }
+
   save() {
     const data = JSON.stringify(this.pesquisa);
     localStorage.setItem('pesquisa', data);
   }
 
+  ngOnInit(): void {
+  }
+
+
 }
-
-
